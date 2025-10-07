@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Feedback</title>
+    <style>
+        fieldset{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Registration and Feedback</h1>
+    <form>
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+            <label for="Full Name">Full Name: </label>
+            <input type="text" id="Full Name" name="Full Name" placeholder="Enter your Full Name" required>
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="example@ex.com" required>
+            <br><br>
+            <label for="Password">Password: </label>
+            <input type="Password" id="Password" name="Password" placeholder="Enter your secure Password">
+            <br><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label>Gender: </label>
+            <input type="radio" name="Gender" id="Male" value="male" required>
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female" required>
+            <label for="Female">Female</label>
+            <input type="radio" name="Gender" id="Other" value="other" required>
+            <label for="Other">Other</label>
+            <br><br>
+            <label for="Resume">Upload Resume: </label>
+            <input type="file" id="Resume" name="Resume" accept="pdf,.docx" required>
+        </fieldset>
+        <br><br><br>
+        <fieldset>
+            <legend><strong>Preferences & Interests</strong></legend>
+            <label for="Country">Country: </label>
+            <select name="Country" id="Country" required>
+                <option value="">--Select your Country--</option>
+                <option value="India">India</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="other">Other</option>
+            </select>
+            <p>Choose your Intrest</p>
+        <input type="checkbox" id="Coding" name="intrest" value="Coding">
+        <label for="">Coding</label>
+        <input type="checkbox" id="Music" name="Intrest" value="Music">
+        <label for="">Music</label>
+        <br><br>
+        <label for="Experience">Experience</label>
+        <input type="range" id="Experience" name="Experience" min="0" max="10">
+        <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong>Comment or Suggestions</strong></legend>
+            <textarea 
+            name="comment" 
+            id="comment"
+            rows="5"
+            cols="50"
+            placeholder="Enter your Comment or Suggestions..."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
