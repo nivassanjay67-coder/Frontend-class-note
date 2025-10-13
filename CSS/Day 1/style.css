@@ -1,0 +1,18 @@
+h1{
+    color: red;
+}
+.a1{
+    color: blueviolet;
+}
+.a1, .a2{
+    text-align: center;
+}
+.divi{
+    color: aquamarine;
+}
+.a2{
+    border : 10px solid blue
+}
+.a2{
+    border-radius: 20px;
+}
